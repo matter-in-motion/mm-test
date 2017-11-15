@@ -9,7 +9,7 @@ Collection of functions to help you test your extensions and applications
 
 ## Instalation
 
-`npm i mm-test --svae-dev`
+`npm i mm-test --save-dev`
 
 ## Usage
 

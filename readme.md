@@ -15,7 +15,27 @@ Collection of functions to help you test your extensions and applications
 
 ### createApp(settings)
 
-Returns an app instance with applied `settings`. The returned app will output `warn` and up level formatted logs to stdout.
+Returns an app instance with applied `settings`. The returned app will output `warn` and up level formatted logs to stdout. By default it creates test `user` authetication provider.
+
+### getToken(app, opts)
+
+Returns a Promise that will be resolved with object `{expires, token}`.
+
+* **app** — matter in motion app instance
+* opts
+  + provider — string, default 'user', auth provider to use.
+
+### verifyToken(app, opts)
+
+Returns a Promise that will be resolved when token is valid.
+
+* **app** — matter in motion app instance
+* **opts**
+  + **token** — string, an auth token.
+  + provider — string, default 'user', auth provider to use.
+  + subject — string, token subject it will be verified by
+  + audience — string, token audience it will be verified by
+
 
 Example:
 

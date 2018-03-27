@@ -4,5 +4,6 @@ const { getToken, verifyToken } = require('./auth');
 
 module.exports = {
   createApp,
-  getToken, verifyToken
+  getToken,
+  verifyToken
 }

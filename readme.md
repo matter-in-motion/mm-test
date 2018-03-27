@@ -13,9 +13,14 @@ Collection of functions to help you test your extensions and applications
 
 ## Usage
 
-### createApp(settings)
+### createApp(settings, opts)
 
-Returns an app instance with applied `settings`. The returned app will output `warn` and up level formatted logs to stdout. By default, it creates test `user` authentication provider.
+Returns an app instance with applied `settings`. The returned app will output `warn` and up level formatted logs to stdout.
+
+Optios are:
+
+* default — boolean, defaut true. Adds http transport and JSON serializer to test app.
+* auth — string, if present adds auth provider with the same name.
 
 ### getToken(app, opts)
 
@@ -48,7 +53,6 @@ const createApp = require('mm-test').createApp;
 process.env.NODE_ENV = 'production'; // or any other additional settings environment you want to load
 const app = createApp({
   extensions: [
-    'http',
     extension
   ],
 

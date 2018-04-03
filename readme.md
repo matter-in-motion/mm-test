@@ -13,6 +13,10 @@ Collection of functions to help you test your extensions and applications
 
 ## Usage
 
+### createClient(opts)
+
+Creates Matter In Motion client. Check the [official documentation](https://github.com/matter-in-motion/mm-client-nodejs)
+
 ### createApp(settings, opts)
 
 Returns an app instance with applied `settings`. The returned app will output `warn` and up level formatted logs to stdout.
@@ -20,6 +24,7 @@ Returns an app instance with applied `settings`. The returned app will output `w
 Optios are:
 
 * default — boolean, defaut true. Adds http transport and JSON serializer to test app.
+* test — boolean, adds test resource with useful calls.
 * auth — string, if present adds auth provider with the same name.
 
 ### getToken(app, opts)
@@ -28,7 +33,7 @@ Returns a Promise that will be resolved with object `{expires, token}`.
 
 * **app** — matter in motion app instance
 * opts
-  + provider — string, default 'user', auth provider to use.
+  + **provider** — string, auth provider to use.
 
 ### verifyToken(app, opts)
 
@@ -37,7 +42,7 @@ Returns a Promise that will get resolved when the token is valid.
 * **app** — matter in motion app instance
 * **opts**
   + **token** — string, an auth token.
-  + provider — string, default 'user', auth provider to use.
+  + **provider** — string, auth provider to use.
   + subject — string, token subject it will be verified by.
   + audience — string, token audience it will be verified by.
 

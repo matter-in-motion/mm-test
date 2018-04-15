@@ -26,10 +26,9 @@
   "homepage": "https://github.com/matter-in-motion/mm-test#readme",
   "dependencies": {
     "matter-in-motion": "^3.0.0",
-    "mm-client": "^1.0.0",
-    "mm-http": "^1.0.0",
-    "mm-serializer-json": "^1.0.0",
-    "statuses": "^1.5.0"
+    "mm-client-nodejs": "^1.0.0",
+    "mm-http": "^3.0.0",
+    "mm-serializer-json": "^1.0.0"
   },
   "devDependencies": {
     "ava": "^0.25.0",

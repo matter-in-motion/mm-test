@@ -29,7 +29,7 @@ module.exports = (extraSettings, opts = {}) => {
   const settings = app.units.require('core.settings');
   settings.core.debug = true;
   settings.core.logger.stream = undefined;
-  settings.core.logger.options.prettyPrint = true;
+  settings.core.logger.options.prettyPrint = { levelFirst: true };
   settings.core.logger.options.level = 'warn';
   settings.apply(extraSettings);
 

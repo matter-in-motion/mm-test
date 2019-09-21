@@ -25,13 +25,13 @@
   },
   "homepage": "https://github.com/matter-in-motion/mm-test#readme",
   "dependencies": {
-    "matter-in-motion": "^3.1.0",
-    "mm-client-nodejs": "^1.0.0",
-    "mm-http": "^3.0.0",
+    "matter-in-motion": "^3.3.2",
+    "mm-client-nodejs": "^1.1.0",
+    "mm-http": "^3.1.2",
     "mm-serializer-json": "^1.0.0"
   },
   "devDependencies": {
-    "ava": "^0.25.0",
-    "nyc": "^11.0.0"
+    "ava": "^2.0.0",
+    "nyc": "^14.0.0"
   }
 }
